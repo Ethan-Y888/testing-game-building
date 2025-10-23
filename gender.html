@@ -1,7 +1,7 @@
 <html>
   <br><br><h1>What is your gender?</h1>
-  <button style =  "width: 150px; height: 150px" id = "Male">Male</button>
-  <button style =  "width: 150px; height: 150px"id = "Female">Female</button>
+  <button id = "Male">Male</button>
+  <button id = "Female">Female</button>
 <style> 
   html{
     font-family: Arial
@@ -19,10 +19,12 @@
     var FemaleButton = documenr.getElementById("Female")
     FemaleButton.onclick=()=>{
       let Gender = "Female"
+      window.location.href = 'home.html'
     }
     MaleButton.onclick=()=>{
       let Gender = "Male"
+      window.location.href = 'home.html'
     }
-    localStorage.setItem("Gender", Gender)
+    localStorage.setItem('Gender', Gender)
   </script>
 </html>

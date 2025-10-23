@@ -5,13 +5,13 @@
 <style> 
   html{
     font-family: Arial
-  }
-  .center-absolute {
+    .center-absolute {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
       }
+  }
 </style>
   <script>
     var Gender = ""
@@ -20,12 +20,12 @@
     FemaleButton.onclick=()=>{
       Gender = "Female"
       localStorage.setItem("Gender", Gender)
-      window.location.href = "home.html"
+      window.location.href = "titlescreen.html"
     }
     MaleButton.onclick=()=>{
       Gender = "Male"
       localStorage.setItem("Gender", Gender)
-      window.location.href = "home.html"
+      window.location.href = "titlescreen.html"
     }
   </script>
 </html>

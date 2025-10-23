@@ -16,15 +16,16 @@
   <script>
     var Gender = ""
     var MaleButton = document.getElementById("Male")
-    var FemaleButton = documenr.getElementById("Female")
+    var FemaleButton = document.getElementById("Female")
     FemaleButton.onclick=()=>{
-      let Gender = "Female"
+      Gender = "Female"
       window.location.href = "home.html"
+      localStorage.setItem("Gender", Gender)
     }
     MaleButton.onclick=()=>{
-      let Gender = "Male"
+      Gender = "Male"
       window.location.href = "home.html"
+      localStorage.setItem("Gender", Gender)
     }
-    localStorage.setItem("Gender", Gender)
   </script>
 </html>

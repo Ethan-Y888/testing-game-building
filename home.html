@@ -1,10 +1,28 @@
 <html>
-  <h1>hi</h1>
-
- .center-absolute {
+  <br><br><h1>What is your gender?</h1>
+  <button style =  "width: 150px; height: 150px" id = "Male">Male</button>
+  <button style =  "width: 150px; height: 150px"id = "Female">Female</button>
+<style> 
+  html{
+    font-family: Arial
+  }
+  .center-absolute {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
       }
+</style>
+  <script>
+    var Gender = ""
+    var MaleButton = document.getElementById("Male")
+    var FemaleButton = documenr.getElementById("Female")
+    FemaleButton.onclick=()=>{
+      let Gender = "Female"
+    }
+    MaleButton.onclick=()=>{
+      let Gender = "Male"
+    }
+    localStorage.setItem("Gender", Gender)
+  </script>
 </html>

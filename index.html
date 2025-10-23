@@ -1,9 +1,7 @@
 <html>
   <br><br><div style = "text-align: center">
       <h1> Game thingy </h1>
-    <br><a href = "home.html">
-      <button type="button" id="Start">START</button>
-    </a>
+      <br><button type="button" id="Start">START</button>
   </div>
   <style>
     html{
@@ -21,7 +19,9 @@
 
   </style>
   <script>
-    
-    
+    var StartButton = document.getElementById("Start")
+    StartButton.onclick =()=>{
+      "window.location.href='home.html'"
+    }
   </script>
 </html>

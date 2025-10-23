@@ -21,10 +21,10 @@
   <script>
     var START = document.getElementById("START")
     START.onclick=()=>{
-      if localStorage.getItem("Gender") == "Male"||"Female"{
-        windows.location.href = "home.html"
+      if localStorage.getItem("Gender") == "Male"|| localStorage.getItem("Gender") == "Female"{
+        window.location.href = "home.html"
       }else{
-        windows.location.href = "gender.html"
+        window.location.href = "gender.html"
       }
     }
   </script>

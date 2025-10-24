@@ -13,12 +13,12 @@
     var Gender = ""
     var MaleButton = document.getElementById("Male")
     var FemaleButton = document.getElementById("Female")
-    FemaleButton.onclick=()=>{
+    FemaleButton.onclick = function() {
       Gender = "Female"
       localStorage.setItem("Gender", Gender)
       window.location.href = "titlescreen.html"
     }
-    MaleButton.onclick=()=>{
+    MaleButton.onclick = function() {
       Gender = "Male"
       localStorage.setItem("Gender", Gender)
       window.location.href = "titlescreen.html"
